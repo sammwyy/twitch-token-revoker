@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Token Revoker</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Revokes authentication tokens from applications connected to your twitch account."
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form-body" id="form">
+        <h1 style="text-align: center">Twitch Token Revoker</h1>
+        <p style="color: #ccc">
+          Revokes authentication tokens from applications connected to your
+          account.
+        </p>
+
+        <div class="toast" id="toast">Espere por favor...</div>
+
+        <div class="form-item">
+          <span class="form-label">Client ID</span>
+          <input
+            required
+            type="text"
+            class="form-input"
+            placeholder="123456789"
+            id="client-id"
+          />
+        </div>
+
+        <div class="form-item">
+          <span class="form-label">Access Token</span>
+          <input
+            required
+            type="text"
+            class="form-input"
+            placeholder="abcdefghijkl"
+            id="access-token"
+          />
+        </div>
+
+        <div class="form-item">
+          <button type="submit" class="form-btn">Revoke</button>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
